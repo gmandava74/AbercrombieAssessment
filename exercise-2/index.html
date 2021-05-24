@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Todo list App</title>
+  <link href='http://fonts.googleapis.com/css?family=Lato:300,400,700' rel='stylesheet' type='text/css'>
+  <link href='./css/app.css' rel='stylesheet' type='text/css'>
+</head>
+
+<body onload="init()">
+  <div class="container">
+    <div class="new-task">
+      <h3 id="new-task-heading" for="new-task">
+        <b>Add Item</b>
+      </h3>
+      <div class="new-task-input-container">
+        <input onkeydown="inputValueKeyDown()" id="new-task-input" type="text">
+        <button onclick="addItem()">Add</button>
+      </div>
+    </div>
+    <div class="incomplete-tasks-container">
+      <h3>
+        <b>Todo</b>
+      </h3>
+      <ul id="incomplete-tasks">
+      </ul>
+    </div>
+    <div class="completed-tasks-container">
+      <h3>
+        <b>Completed</b>
+      </h3>
+      <ul id="completed-tasks">
+      </ul>
+    </div>
+  </div>
+
+  <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+  <script src="./js/app.js"> </script>
+
+</body>
+
+</html>

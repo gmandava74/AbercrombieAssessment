@@ -1,0 +1,33 @@
+{
+  "name": "test",
+  "version": "1.0.0",
+  "main": "getData.js",
+  "author": "goutham",
+  "license": "MIT",
+  "scripts": {
+    "test": "jest __tests__/getData.js"
+  },
+  "jest": {
+    "transform": {
+      "\\.js$": "babel-jest",
+      "\\.hbs$": "handlebars-jest"
+    }
+  },
+  "dependencies": {
+    "@babel/core": "^7.5.5",
+    "@babel/preset-env": "^7.5.5",
+    "archiver": "^3.1.1",
+    "babel-jest": "^24.9.0",
+    "fs-extra": "^8.1.0",
+    "handlebars": "^4.7.7",
+    "handlebars-jest": "^0.6.0",
+    "inquirer": "^7.0.0",
+    "jest": "^24.9.0",
+    "jest-cli": "^24.9.0",
+    "jest-silent-reporter": "^0.1.2",
+    "open": "^6.4.0"
+  },
+  "devDependencies": {
+    "jest-handlebars": "^1.0.1"
+  }
+}
